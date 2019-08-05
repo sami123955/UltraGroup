@@ -1,0 +1,38 @@
+<div class="content-home">
+    <div class="row">
+        <div class="col-sm-8 offset-sm-2 body-page">
+            <div class="row">
+                <div class="col-sm-12 xtitle">
+                    <h2>Reserva de habitaciones</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3 content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" (click)="ini.toggle()"><i class="fas fa-calendar-alt"></i></div>
+                                </div>
+                                <input type="text" ngbDatepicker #ini="ngbDatepicker" placeholder="Fecha de llegada" class="form-control" (dateSelect)="onDateIniSelect($event)" readonly/>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" (click)="fin.toggle()"><i class="fas fa-calendar-alt"></i></div>
+                                </div>
+                                <input type="text" ngbDatepicker #fin="ngbDatepicker" placeholder="Fecha de salida" class="form-control" (dateSelect)="onDateFinSelect($event)" readonly/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 align-center">
+                            <button class="btn btn-success" (click)="searchHotels()"><i class="fas fa-search"></i> Ver disponibilidad</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

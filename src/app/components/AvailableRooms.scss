@@ -1,0 +1,36 @@
+.content-home {
+    margin-top: 50px;
+
+    .xtitle {
+        text-align: center;
+    }
+
+    .content {
+        margin-top:  30px;
+
+        .content-hotel {
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 0;
+            margin-bottom: 10px;
+
+            .content-image {
+                padding: 0 !important;
+                .img-hotel {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    width: 210px;
+                    height: 210px;
+                }
+            }
+
+            .xtitle-hotel{
+                margin-top: 10px;
+            }
+
+            .btn-search {
+                margin-top: 10px;
+            }
+        }
+    }
+}

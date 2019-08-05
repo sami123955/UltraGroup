@@ -1,0 +1,23 @@
+<div class="content-home">
+    <div class="row">
+        <div class="col-sm-8 offset-sm-2 body-page">
+            <div class="row">
+                <div class="col-sm-12 content">
+                    <div class="row content-hotel" *ngFor="let hotel of hotels">
+                        <div class="col-sm-4 content-image">
+                            <img src="{{hotel.image_url}}" alt="" class="img-hotel" *ngIf="hotel.image_url">
+                            <img src="assets/img/default-image.jpg" alt="" class="img-hotel" *ngIf="!hotel.image_url">                            
+                        </div>
+                        <div class="col-sm-8">
+                            <h3 class="xtitle-hotel">{{hotel.name}}</h3>
+                            <hr>
+                            <span>{{hotel.description}}</span>
+                            <hr>
+                            <button class="btn btn-success btn-search" (click)="searchRooms(hotel.id)">Ver habitaciones</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

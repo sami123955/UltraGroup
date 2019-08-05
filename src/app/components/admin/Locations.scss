@@ -1,0 +1,32 @@
+.content-locations {
+    margin: 0;
+    margin-top: 30px;
+    
+    .content-form {
+        text-align: center;
+
+        .select-hotels {
+            margin-bottom: 10px;
+        }
+
+        .footer-form {
+            text-align: left;
+
+            .btn-custom {
+                margin-top: 5px;
+            }
+
+            .btn-cancel {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .content-table {
+        margin-top: 20px;
+
+        .btn-new {
+            margin-bottom: 10px;
+        }
+    }
+}
